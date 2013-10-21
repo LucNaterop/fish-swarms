@@ -14,7 +14,7 @@ A lot of researchers have dabbled with modelling swarm behaviour in the past, no
 
 While going through different research articles, we found that a lot of them assumed that swarm population size and number of influential neighbours were relatively insignificant parameters contributing to overall swarm dynamics – which may be true for small swarms, but we want to test this notion for relatively larger population sizes, since we intuitively feel that they could heavily influence swarm properties like overall velocity, response time towards external forces and swarm splitting characteristics.
 
-We will therefore use a purely mechanistic mathematical model (ignoring other custom swarm “rules”), and run the same over wide ranges of population, and number of influential neighbours as a fraction of total population, to gain a broader understanding on the significance of such factors towards overall swarm behaviour.
+We will therefore use a purely mechanistic mathematical model (ignoring other custom swarm “rules”), and run the same over wide ranges of population, and neighbourhood distances, to gain a broader understanding on the significance of such factors towards overall swarm behaviour.
 
 
 ## The Model
@@ -25,74 +25,52 @@ Agents are considered as point masses in a two-dimensional, continuous world wit
 
 Variables we want to study:
 
-Independent Variables:
-
+<b>Independent Variables:</b>
 - Population size (number of agents)
-
 - Neighbourhood distance: maximum distance of an influental neighbour
 
-Dependent Variables:
-
+<b>Dependent Variables:</b>
 - Interaction forces:  Member-member-forces and member-environment-forces
-
 - Acceleration, velocity and position of agents
-
-- Cohesiveness: (1/A, where A is the smallest circle around all members of a swarm)
-
+- Cohesiveness: (1/A, where A is the area of the smallest circle around all members of a swarm)
 - Splitting number: Amount of independent subgroups
+- Average velocity of agents
+- Density: population size x cohesiveness
 
 
 
 ## Fundamental Questions
 
-How does the population dynamics change with varying neighbourhood distance?
-
- - Is there a change in the behaviour of the swarm (i.e. when persuing food)?
-
- - Do individual agents get isolated by the rest?
-
- - What is the evolution of the standard deviation of the population distribution?
+ - How does the population dynamics change with varying neighbourhood distance?
+   - Is there a change in the behaviour of the swarm (i.e. when persuing food)?
+   - Do individual agents get isolated by the rest?
+   - Does the average velocity decrease with increasing neighbourhood distance?
 
 
-How is the spread function modified by population size?
-
- - How does the average distance between agents change with increasing population?
-
- - What is the evolution of the swarm in an environment with objects (i.e food & obstacles)?
-
+ - How is the spread function modified by population size?
+   - How does the cohesiveness change with increasing population?
+   - What is the evolution of the swarm in an environment with objects (i.e food & obstacles)?
      - Does it have a characteristic or chaotic evolution?
-
      - Are there any particular formations prefered?
 
-
-
-Neighbourhood: maximum distances of influential neighbours as a fraction of swarm spread.
-
-Change in behaviour with respect to different neighbourhoods?
-
-(Spread function is the smallest area that all fishes can fit in.)
-
--Cohesiveness of swarm in absence of objects. (Cohesiveness: 1/A, where A is the area of the smallest circle around the swarm)
-
--Splitting characteristics of swarm in presence of objects. (object: obstecle or food)
-
--Single/multiple objects.
+ - How does the density vary with respect to changes in population size and neighbourhood distances?
 
 
 ## Expected Results
 
-Even though the number of influential neighbours may be insignificant at low population numbers, we expect a high dependence for larger numbers.
+ - Even though the number of influential neighbours may be insignificant at low population numbers, we expect a high dependence for larger numbers.
 
-The cohesiveness (which we define as c=1/A, where A is the area of the smallest circle enclosing all agents) should initially decrease drastically with growing population number, and eventually approach a constant value. In addition, formation characteristics (such as splitting into subgroups) are anticipated for large populations.
+ - The cohesiveness should initially decrease drastically with growing population number, and eventually approach a constant value. In addition, formation characteristics (such as splitting into subgroups) are anticipated for large populations.
 
-By increasing the number of influential neighbours we assume stronger bondings, thus we expect a lower probability of certain characteristics such as splitting into subgroups and secluded agents.
+ - By increasing the number of influential neighbours we assume stronger bondings, thus we expect a lower probability of certain characteristics such as splitting into subgroups and secluded agents.
 
-Increase of cohesiveness for increase neibhbourhood.
+ - Increase of cohesiveness for increase neibhbourhood.
 
-Increased chance of splitting up in presence of objects with decrease of neighbourhood.
+ - Increased chance of splitting up in presence of objects with decrease of neighbourhood.
 
-For different population sizes, the product of cohesiveness and population (densitiy) should be constant for constant neighbourhood.
+ - For different population sizes, the product of cohesiveness and population (densitiy) should be constant for constant neighbourhood.
 
+ - For decreasing neighbourhood distance, we expect an increasing average velocity. 
 
 ## References
 
