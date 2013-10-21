@@ -1,6 +1,4 @@
-# MATLAB HS13 – Research Plan (Template)
-
-(text between brackets to be removed)
+# MATLAB HS13 – Research Plan
 
 > Fishy03
 
@@ -18,11 +16,6 @@ While going through different research articles, we found that a lot of them ass
 
 We will therefore use a purely mechanistic mathematical model (ignoring other custom swarm “rules”), and run the same over wide ranges of population, and number of influential neighbours as a fraction of total population, to gain a broader understanding on the significance of such factors towards overall swarm behaviour.
 
-(States your motivation clearly: why is it important / interesting to solve this problem?)
-
-(Add real-world examples, if any)
-
-(Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
 
 ## The Model
 
@@ -49,30 +42,27 @@ Dependent Variables:
 - Splitting number: Amount of independent subgroups
 
 
-(Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
-
 
 ## Fundamental Questions
 
-How does the population distribution change with varying number of influential neighbours?
+How does the population dynamics change with varying neighbourhood distance?
 
- - is there a change in the behaviour of the swarn (i.e. when persuing food)?
+ - Is there a change in the behaviour of the swarm (i.e. when persuing food)?
 
  - Do individual agents get isolated by the rest?
 
- - What is the evolution of the standard deviation of the population distribution.
+ - What is the evolution of the standard deviation of the population distribution?
 
 
 How is the spread function modified by population size?
 
  - How does the average distance between agents change with increasing population?
 
- - What is the evolution of the swarm in an environment with objects (i.e food & obstecles)?
+ - What is the evolution of the swarm in an environment with objects (i.e food & obstacles)?
 
      - Does it have a characteristic or chaotic evolution?
 
      - Are there any particular formations prefered?
-
 
 
 
@@ -89,47 +79,30 @@ Change in behaviour with respect to different neighbourhoods?
 -Single/multiple objects.
 
 
-
-
-(At the end of the project you want to find the answer to these questions)
-
-(Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
-
-
 ## Expected Results
 
 Even though the number of influential neighbours may be insignificant at low population numbers, we expect a high dependence for larger numbers.
 
-The coheciveness (which we define as c=1/A, where A is the area of the smallest circle enclosing all agents) should initially increase drastically with growing population number, and eventually aproach a constant value. In addition, formation characteristics (such as splitting into subgroups) are anticipated for large populations.
+The cohesiveness (which we define as c=1/A, where A is the area of the smallest circle enclosing all agents) should initially decrease drastically with growing population number, and eventually approach a constant value. In addition, formation characteristics (such as splitting into subgroups) are anticipated for large populations.
 
 By increasing the number of influential neighbours we assume stronger bondings, thus we expect a lower probability of certain characteristics such as splitting into subgroups and secluded agents.
 
 Increase of cohesiveness for increase neibhbourhood.
 
-Increased chance of splitting up in presence of objects with increase of neighbourhood.
+Increased chance of splitting up in presence of objects with decrease of neighbourhood.
 
-For different population sizes, the product of cohesiveness and population (1/densitiy) should be constant for constant neighbourhood.
-
-(What are the answers to the above questions that you expect to find before starting your research?)
+For different population sizes, the product of cohesiveness and population (densitiy) should be constant for constant neighbourhood.
 
 
 ## References
 
  - T.I. Zohdi, “Mechanistic Modeling of Swarms”, Comput. Methods Appl. Mech. Engrg. 198 (2009) 2039–2051
-
-(Add the bibliographic references you intend to use)
-
-(Explain possible extension to the above models)
-
-(Code / Projects Reports of the previous year)
+ - Viscidoa, Parrisha, Grünbaum, "The effect of population size and number of influential neighbors
+on the emergent properties of fish schools", Ecological Modelling 183 (2005) 347–363
 
 
 ## Research Methods
 
-Agent-Based Model,
-
-## Other
-
-(mention datasets you are going to use)
+We intend to implement an agent-based model in MATLAB using discrete time intervals to simulate our model. 
 
 
