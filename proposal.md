@@ -1,4 +1,4 @@
-# MATLAB HS13 – Research Plan (Template)  CHANGEEE101
+# MATLAB HS13 – Research Plan (Template)
 
 (text between brackets to be removed)
 
@@ -42,11 +42,11 @@ Dependent Variables:
 
 - Interaction forces:  Member-member-forces and member-environment-forces
 
-- Acceleration, velocity and position of agents,
+- Acceleration, velocity and position of agents
 
 - Cohesiveness: (1/A, where A is the smallest circle around all members of a swarm)
 
-- Splitting number: amount of independent subgroups.
+- Splitting number: Amount of independent subgroups
 
 
 (Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
@@ -54,23 +54,24 @@ Dependent Variables:
 
 ## Fundamental Questions
 
-    How does the population distribution change with varying number of influential neighbours?
+How does the population distribution change with varying number of influential neighbours?
 
-        is there a change in the behaviour of the swarn (i.e. when persuing food)?
+ - is there a change in the behaviour of the swarn (i.e. when persuing food)?
 
-        Do individual agents get isolated by the rest?
+ - Do individual agents get isolated by the rest?
 
-        What is the evolution of the standard deviation of the population distribution.
+ - What is the evolution of the standard deviation of the population distribution.
 
-    How is the spread function modified by population size?
 
-        How does the average distance between agents change with increasing population?
+How is the spread function modified by population size?
 
-        What is the evolution of the swarm in an environment with objects (i.e food & obstecles)?
+ - How does the average distance between agents change with increasing population?
 
-            Does it have a characteristic or chaotic evolution?
+ - What is the evolution of the swarm in an environment with objects (i.e food & obstecles)?
 
-            Are there any particular formations prefered?
+     - Does it have a characteristic or chaotic evolution?
+
+     - Are there any particular formations prefered?
 
 
 
@@ -114,7 +115,7 @@ For different population sizes, the product of cohesiveness and population (1/de
 
 ## References
 
-    T.I. Zohdi, “Mechanistic Modeling of Swarms”, Comput. Methods Appl. Mech. Engrg. 198 (2009) 2039–2051
+ - T.I. Zohdi, “Mechanistic Modeling of Swarms”, Comput. Methods Appl. Mech. Engrg. 198 (2009) 2039–2051
 
 (Add the bibliographic references you intend to use)
 
